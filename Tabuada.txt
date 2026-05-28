@@ -1,0 +1,38 @@
+algoritmo "TabuadaLimite"
+
+var
+   n, i: inteiro
+
+inicio
+
+   enquanto (verdadeiro) faca
+
+      limpatela
+
+      escreval("===== TABUADA =====")
+      escreva("Digite um número (0 a 10): ")
+      leia(n)
+
+      enquanto (n < 0 ou n > 10) faca
+      limpatela
+         escreval("Número inválido! Digite entre 0 e 10.")
+         escreva("Digite novamente: ")
+         leia(n)
+      fimenquanto
+
+      limpatela
+
+      escreval("Tabuada do ", n)
+      escreval("-------------------")
+
+      para i de 1 ate 10 faca
+         escreval(n, " x ", i, " = ", n * i)
+      fimpara
+
+      escreval("")
+      escreval("Pressione ENTER para continuar...")
+      leia(n)
+
+   fimenquanto
+
+fimalgoritmo
