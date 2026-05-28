@@ -1,0 +1,21 @@
+algoritmo "Login"
+
+var
+   senha: caractere
+
+inicio
+
+ escreval("Digite a Senha: ")
+ leia(senha)
+   enquanto (senha <> "senha123") faca
+      limpatela
+      escreva("Senha incorreta! Tente Novamente: ")
+      leia(senha)
+
+      se (senha = "senha123") entao
+         limpatela
+         escreval("Senha correta, Acesso liberado! ")
+      fimse
+
+   fimenquanto
+fimalgoritmo
