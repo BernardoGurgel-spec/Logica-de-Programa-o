@@ -1,0 +1,30 @@
+programa
+{
+	
+inclua biblioteca Util --> U
+	inclua biblioteca Calendario --> C
+	funcao inicio()
+	{
+	inteiro sorteio
+	cadeia enter
+	inteiro dia, mes, ano, hora, minuto, segundo
+	
+	  escreva("Pressione ENTER para sortear o numero\n")
+	  leia(enter)
+       sorteio = U.sorteia(1, 100)
+       escreva("Carregando...\n\n")
+       U.aguarde (5000)
+       escreva("O numero sorteado foi: ", sorteio, "!\n\n")
+
+       dia = C.dia_mes_atual()
+       mes = C.mes_atual()
+       ano = C.ano_atual()
+       hora = C.hora_atual(falso)
+       minuto = C.minuto_atual()
+       segundo = C.segundo_atual()
+       
+	  escreva("Data: ", dia, "/", mes, "/", ano, "\n")
+	  escreva("Hora: ", hora, ":", minuto, ":", segundo, "\n")
+		
+	}
+}
